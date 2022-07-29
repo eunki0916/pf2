@@ -1,0 +1,91 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+hedaer a {
+  
+}
+
+header .inner {
+  width: 90%;
+  height: 100px;
+  padding-top: 40px;
+  align-items: flex-end;
+}
+header .inner h1 {
+  /*position: absolute;
+  left: calc(50% - 100px); 
+  왼쪽으로부터 50% 갔으나 중앙정렬 안되 넓이 지정 후, 넓이의 반만큼 빼면 
+  중앙정렬 가능
+  width: 200px;
+  text-align: center;*/
+  order: 2;
+  
+}
+header .inner h1 img {
+  display: block;
+  transform: translateY(-20px);
+  filter: brightness(100);
+}
+header .inner h1 a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+  color: #eee;
+}
+header .wgnb {
+  
+}
+header .wgnb{
+  order: 1;
+}
+header .wgnb a.ham {
+  font-size: 0;
+  width: 32px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  box-sizing: border-box;
+  color: #eee;
+}
+header .wgnb a.ham::before {
+  content: "";
+  display: block;
+/*   width: 100%; */
+  flex-grow: 1;
+  height: 4px;
+  background-color: #eee;
+  
+}
+header .inner ul.gnb {
+  
+}
+header .inner ul.gnb li h2 {
+  
+}
+header .inner ul.gnb li h2 a {
+  
+}
+header .inner ul.gnb li ul.gnbsub {
+  
+}
+header .inner ul.gnb li ul.gnbsub li {
+  
+}
+header .inner ul.gnb li ul.gnbsub li a {
+  
+}
+header .inner ul.enb {
+  order: 3;
+  gap: 20px;
+}
+header .inner ul.enb li {
+  
+}
+header .inner ul.enb li a {
+  
+}/*# sourceMappingURL=header.css.map */

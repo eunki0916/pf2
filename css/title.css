@@ -1,0 +1,152 @@
+#title {
+  height: 100%;
+  min-height: 480px;
+  background-color: #eee;
+  position: relative;
+}
+#title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  background-color: black;
+  
+}
+#title .inner {
+  width: 80%;
+  height: 100%;
+  z-index: 2;
+  color: #eee;
+}
+
+#title .inner h2 {
+  position: relative;
+  font-size: 65px;
+  z-index: 1;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+#title .inner h2 span {
+  display: block;
+  animation-name: h2up;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-direction: reverse;
+}
+@keyframes h2up {
+  20% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+#title .inner p {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+#title .inner p span {
+  display: block;
+  animation-name: pup;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-direction: reverse;
+}
+@keyframes pup {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+
+#title .inner iframe {
+  position: absolute;
+  width: 90%;
+  height: 70%;
+/*   width: 1304px; */
+/*   height: 670px; */
+  bottom: 0%;
+  right: 0%;
+/*   transform: scale(0.7); */
+/*   transform-origin: 80% 100%; */
+}
+#title span.titleaside {
+  position: absolute;
+  right: calc((20% / 4) - 50px);
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  justify-content: space-between;
+}
+#title .titleaside a.campaign {
+  transform: rotate(90deg) translateX(78px);
+  color: #ccc;
+  font-weight: 700;
+  font-size: 12px;
+}
+#title .titleaside a.campaign:hover {
+  color: black;
+  transition: 1000ms;
+}
+#title .titleaside a.scroll {
+  font-size: 10px;  
+  font-weight: 700;
+}
+#title .titleaside a.scroll::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  display: block;
+  border: 2px solid;
+  border-left: transparent;
+  border-top: transparent;
+  transform: translateX(15px) translateY(-10px) rotate(45deg) ;
+  animation-name: scroll;
+  animation-iteration-count: infinite;
+  animation-duration: 1500ms;
+  animation-delay: 500ms;
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#title .titleaside a.scroll::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  display: block;
+  border: 2px solid black;
+  border-left: transparent;
+  border-top: transparent;
+  transform: translateX(15px) translateY(-40px) rotate(45deg);
+  animation-name: scroll2;
+  animation-iteration-count: infinite;
+  animation-duration: 1500ms;
+}
+@keyframes scroll2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,80 @@
+.hide {
+    display: none;
+}
+
+.inner {
+    width: 80%;
+    margin: 0 auto;
+}
+.innerPadding{
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+/* h태그 스타일*/
+.h2 {
+    font-size: 35px;
+    font-weight: 700;
+    
+}
+.h3 {
+    font-size: 31px;
+    font-weight: 700;
+}
+.h4 {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+/* flex */
+.flex {
+    display: flex;
+}
+.flexBetween {
+    justify-content: space-between;
+}
+.flexAround {
+    justify-content: space-around;
+}
+.flexEvenly {
+    justify-content: space-evenly;
+}
+.flexCenter {
+    justify-content: center;
+}
+.flexColumn {
+    flex-direction: column;
+}
+.flexRow {
+    flex-direction: row;
+}
+.flexAlignCenter {
+    align-items: center;
+}
+.flexAlignEnd {
+    align-items: flex-end;
+}
+.flexWrap {
+    flex-wrap: wrap;
+}
+
+
+.br {
+    display: block;
+}
+
+.p {
+    line-height: 1.5;
+}
+
+.padding50 {
+    padding: 50px;
+}
+.padding100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* 글자정렬 */
+.text-center {
+    text-align: center;
+}
